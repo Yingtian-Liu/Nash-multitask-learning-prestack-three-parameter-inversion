@@ -20,9 +20,20 @@ from methods.Nash import NashMTL
 
 def preprocess(no_wells, data_flag='marmousi'):
     
-    data_dic = np.load(join('data','train_data.npy'), allow_pickle=True).item()    
+    """load seismic"""
+    data_dic = np.load(join('data','seismic_data.npy'), allow_pickle=True).item()  
     seismic = data_dic["synth_seismic_15db_noise"].squeeze()
-    model = data_dic["parameter"].squeeze()[:,:,::6]
+    
+    """load three-parameter"""
+    data_vp = np.load(join('data','vp.npy'), allow_pickle=True).item()  
+    data_vs = np.load(join('data','vs.npy'), allow_pickle=True).item()  
+    data_den = np.load(join('data','den.npy'), allow_pickle=True).item() 
+    
+    vp = data_vp["vp"].squeeze()
+    vs = data_vs["vs"].squeeze()
+    den = data_den["den"].squeeze()
+    model = np.stack((vp, vs, den), axis=1)[:,:,::6]
+
 
         
     seismic_mean = np.mean(seismic)
