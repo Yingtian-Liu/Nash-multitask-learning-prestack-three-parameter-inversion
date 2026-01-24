@@ -18,22 +18,12 @@ Deep-learning techniques have been widely used in prestack three-parameter inver
 ## Process visualization of the Nash-MTL-STCN method
 ![](https://github.com/Yingtian-Liu/Nash-multitask-learning-prestack-three-parameter-inversion/blob/main/Image/Process%20visualization%20of%20the%20Nash-MTL-STCN%20method.png)
 
-
-## Sample Results
-
-
-
-### Visual Comparison of Inversion Results
-| Parameter Inversion | Estimated Result | True Value | Absolute Difference |
-|:-----------:|:-----------:|:-----------:|:-------------------:|
-| P-wave Velocity | ![](https://github.com/Yingtian-Liu/Nash-multitask-learning-prestack-three-parameter-inversion/blob/main/Image/Process%20visualization%20of%20the%20Nash-MTL-STCN%20method.png) | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/f829581538154fba8c898a6465bc00e0.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=KWXQ47QaXAr%2F7im49PLz7OnFbrU%3D) | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/dc5484af26844650a2292618a5d0df87.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=wk%2F7g%2FHWIMAn4spGPfJyBzs%2FJlo%3D) |
-
-### Quantitative Evaluation Metrics
-| Parameter       | R² Score | Pearson Correlation | RMSE |
+## Quantitative Evaluation Metrics
+| Parameter       | Pearson Correlation |  R² Score  | SSIM |
 |-----------------|----------|---------------------|------|
-| P-wave Velocity | 0.9689   | 0.9913              | 0.05 |
-| S-wave Velocity | 0.9673   | 0.9911              | 0.06 |
-| Density         | 0.9447   | 0.9828              | 0.04 |
+| P-wave Velocity | 0.9907   | 0.9689              | 0.9097 |
+| S-wave Velocity | 0.9906   | 0.9673              | 0.8917 |
+| Density         | 0.9792   | 0.9447              | 0.9110 |
 
 ## Data
 ### Data Description
