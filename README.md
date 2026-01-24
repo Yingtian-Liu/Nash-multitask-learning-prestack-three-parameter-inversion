@@ -28,7 +28,7 @@ Deep-learning techniques have been widely used in prestack three-parameter inver
 ## Training and testing
 To train the model using the default parameters (as reported in the paper), and test it on the full Marmousi 2 model, run the following command:
 ```
-python main.py
+python train.py
 ```
 
 ## Data
