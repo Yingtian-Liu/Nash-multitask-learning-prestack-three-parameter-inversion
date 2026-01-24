@@ -10,8 +10,13 @@ Yingtian Liu et al., "**Nash-multitask learning-semisupervised temporal convolut
 ## Abstract
 Deep-learning techniques have been widely used in prestack three-parameter inversions to address ill-posed problems. Among these techniques, multitask learning (MTL) methods can simultaneously train multiple tasks, enhancing model generalization and predictive performance. However, existing MTL methods typically adopt heuristic or nonheuristic approaches to jointly update the gradient of each task, which often leads to gradient conflicts between different tasks, reducing inversion accuracy. To address this issue, we develop a semisupervised temporal convolutional network (STCN) method based on Nash equilibrium, referred to as the Nash-MTL-STCN method. First, temporal convolutional networks with noncausal convolution and convolutional neural networks (CNNs) are used as multitask layers to extract shared features from partial angle stack seismic data, with CNNs serving as the single-task layer. Subsequently, a feature mechanism is used to extract shared features in the multitask layer through hierarchical processing, and the gradient combination of these shared features is treated as a Nash game for the optimization of strategy and joint updates. This approach maximizes the overall utility of the three-parameter inversion while alleviating gradient conflicts. In addition, to enhance the generalization and stability of the network, we incorporate geophysical forward modeling and low-frequency constraints into the network. Experimental results demonstrate that our method resolves the gradient conflict issue associated with conventional MTL methods with constant weights and achieves higher precision than four widely used nonheuristic MTL methods. Further experiments using field data also validate the effectiveness of our method.
 
-## Sample Results
 
+## Hierarchical processing structure of the proposed feature mechanism.
+![](https://github.com/Yingtian-Liu/Nash-multitask-learning-prestack-three-parameter-inversion/blob/main/Image/Process%20visualization%20of%20the%20Nash-MTL-STCN%20method.png)
+
+
+## Process visualization of the Nash-MTL-STCN method
+![](https://github.com/Yingtian-Liu/Nash-multitask-learning-prestack-three-parameter-inversion/blob/main/Image/Process%20visualization%20of%20the%20Nash-MTL-STCN%20method.png)
 
 
 ## Sample Results
@@ -21,7 +26,7 @@ Deep-learning techniques have been widely used in prestack three-parameter inver
 ### Visual Comparison of Inversion Results
 | Parameter Inversion | Estimated Result | True Value | Absolute Difference |
 |:-----------:|:-----------:|:-----------:|:-------------------:|
-| P-wave Velocity | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/72c9bf4ab77d4e6f96370de41b1863df.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=11lqyDtGJ1cOmIUvuNruTJOgPaM%3D) | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/f829581538154fba8c898a6465bc00e0.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=KWXQ47QaXAr%2F7im49PLz7OnFbrU%3D) | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/dc5484af26844650a2292618a5d0df87.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=wk%2F7g%2FHWIMAn4spGPfJyBzs%2FJlo%3D) |
+| P-wave Velocity | ![](https://github.com/Yingtian-Liu/Nash-multitask-learning-prestack-three-parameter-inversion/blob/main/Image/Process%20visualization%20of%20the%20Nash-MTL-STCN%20method.png) | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/f829581538154fba8c898a6465bc00e0.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=KWXQ47QaXAr%2F7im49PLz7OnFbrU%3D) | ![](https://p5-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/dc5484af26844650a2292618a5d0df87.png~tplv-a9rns2rl98-image.png?lk3s=8e244e95&rcl=20260124204216087CA240721D660BADE8&rrcfp=dafada99&x-expires=2085482536&x-signature=wk%2F7g%2FHWIMAn4spGPfJyBzs%2FJlo%3D) |
 
 ### Quantitative Evaluation Metrics
 | Parameter       | R² Score | Pearson Correlation | RMSE |
