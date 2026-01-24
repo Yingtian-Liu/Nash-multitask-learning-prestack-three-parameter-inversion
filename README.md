@@ -31,18 +31,11 @@ To train the model using the default parameters (as reported in the paper), and 
 python train.py
 ```
 
-## Data
-### Data Description
+## Data Description
 The data used in this code include:
 - Synthetic seismic data generated from classic geophysical models
 - Low-frequency constraint models for inversion regularization
 
-### Data Download
-The data file should be downloaded automatically when the code is run.
-
-Alternatively, you can download the data file manually at this [link](https://example.com/data.npy) (replace with actual link) and place it in the same folder as train.py file.
-
-All seismic and well-log data are saved in `.npy` format for efficient loading and processing.
 
 ## Citation:
 If you have found our code and data useful, we kindly ask you to cite our work
