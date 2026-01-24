@@ -29,7 +29,6 @@ Deep-learning techniques have been widely used in prestack three-parameter inver
 ### Data Description
 The data used in this code include:
 - Synthetic seismic data generated from classic geophysical models
-- Field prestack seismic data and corresponding well-log data
 - Low-frequency constraint models for inversion regularization
 
 ### Data Download
@@ -39,4 +38,17 @@ Alternatively, you can download the data file manually at this [link](https://ex
 
 All seismic and well-log data are saved in `.npy` format for efficient loading and processing.
 
-## Repository Structure
+## Citation:
+If you have found our code and data useful, we kindly ask you to cite our work
+```
+@article{liu2025nash,
+  title={Nash-multitask learning-semisupervised temporal convolutional network method for prestack three-parameter inversion},
+  author={Liu, Yingtian and Li, Yong and Li, Huating and Peng, Junheng and Liao, Zhangquan and Feng, Wen and Wang, Mingwei},
+  journal={Geophysics},
+  volume={90},
+  number={4},
+  pages={R175--R193},
+  year={2025},
+  publisher={Society of Exploration Geophysicists}
+}
+```
