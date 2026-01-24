@@ -25,6 +25,12 @@ Deep-learning techniques have been widely used in prestack three-parameter inver
 | S-wave Velocity | 0.9906   | 0.9673              | 0.8917 |
 | Density         | 0.9792   | 0.9447              | 0.9110 |
 
+## Training and testing
+To train the model using the default parameters (as reported in the paper), and test it on the full Marmousi 2 model, run the following command:
+```
+python main.py
+```
+
 ## Data
 ### Data Description
 The data used in this code include:
