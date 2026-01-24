@@ -30,6 +30,14 @@ To train the model using the default parameters (as reported in the paper), and 
 ```
 python train.py
 ```
+## Setup environment
+bruges==0.5.4
+matplotlib==3.8.0
+numpy==1.24.0
+python-dateutil==2.8.2
+pytorch==2.1.1
+tqdm==4.67.1
+wget==3.2
 
 ## Data Description
 The data used in this code include:
