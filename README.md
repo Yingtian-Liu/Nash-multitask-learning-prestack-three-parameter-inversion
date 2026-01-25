@@ -78,8 +78,17 @@ If you find our work useful, please cite:
   publisher={Society of Exploration Geophysicists}
 }
 ```
-
-
-
+To reference this open-source implementation, please use:
+```
+@misc{nashmtlstcn2024,
+  author       = {Yingtian Liu},
+  title        = {{Nash-MTL-STCN}: Open-source implementation for prestack three-parameter inversion},
+  year         = {2024},
+  publisher    = {GitHub},
+  journal      = {GitHub repository},
+  howpublished = {\url{https://github.com/Yingtian-Liu/Nash-multitask-learning-prestack-three-parameter-inversion}},
+  note         = {Accessed: 2026-01-25}
+}
+```
 
 
