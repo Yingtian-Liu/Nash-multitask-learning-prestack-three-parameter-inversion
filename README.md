@@ -3,7 +3,8 @@
 **Authors:** [Yingtian Liu](mailto:yingtianliu06@outlook.com), Yong Li, Huating Li, Junheng Peng, Zhangquan Liao, Wen Feng, and Mingwei Wang  
 
 > Code and data for the manuscript: **"Nash-multitask learning-semisupervised temporal convolutional network method for prestack three-parameter inversion"**  
-
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1.1-red.svg)](https://pytorch.org/)
+[![Python 3.7+](https://img.shields.io/badge/Python-3.7%2B-green.svg)](https://www.python.org/)
 ---
 
 ## 📖 Overview  
