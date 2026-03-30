@@ -41,7 +41,7 @@ class forward_model(nn.Module):
         rc1 = torch.zeros((Elastic_impedance.shape[0], Elastic_impedance.shape[1], Elastic_impedance.shape[2]-1))
         for m in range(Elastic_impedance.shape[1]):
             x_d = Elastic_impedance[:,m,1:] - Elastic_impedance[:,m,:-1]
-            x_a = (Elastic_impedance[:,m,1:] + Elastic_impedance[:,m,:-1]) / 2
+            x_a = (Elastic_impedance[:,m,1:] + Elastic_impedance[:,m,:-1])
             rc1[:,m,:] = x_d / x_a 
         rc[:,:,1:] = rc1
         
